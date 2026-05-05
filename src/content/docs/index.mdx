@@ -1,0 +1,36 @@
+---
+title: Documentation équipe
+description: Base documentaire partagée — guides, processus et références.
+template: splash
+hero:
+  tagline: Contenu versionné sur GitHub, rédaction en Markdown ou MDX dans Cursor.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Exemple de guide
+      link: /guides/example/
+      icon: right-arrow
+    - text: Starlight (référence)
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Pour commencer
+
+<CardGrid stagger>
+	<Card title="Modifier le contenu" icon="pencil">
+		Éditez les fichiers dans `src/content/docs/` (Markdown ou MDX).
+	</Card>
+	<Card title="Barre latérale & métadonnées" icon="setting">
+		Ajustez `astro.config.mjs` (sidebar, titre, lien GitHub, `site` / `base`).
+	</Card>
+	<Card title="Prévisualiser en local" icon="laptop">
+		`npm install` puis `npm run dev` — serveur sur http://localhost:4321
+	</Card>
+	<Card title="Médias" icon="document">
+		Images dans `src/assets/` ou fichiers statiques dans `public/`.
+	</Card>
+</CardGrid>

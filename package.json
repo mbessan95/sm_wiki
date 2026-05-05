@@ -1,0 +1,23 @@
+{
+  "name": "sm_wiki",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=18.17.1"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.28.6",
+    "astro": "^4.16.19",
+    "sharp": "^0.33.5"
+  },
+  "overrides": {
+    "@astrojs/sitemap": "3.2.1"
+  }
+}
