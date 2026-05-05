@@ -10,7 +10,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "extract:processus": "node scripts/extract-processus-scrum.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.28.6",
@@ -19,5 +20,9 @@
   },
   "overrides": {
     "@astrojs/sitemap": "3.2.1"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0",
+    "turndown": "^7.2.4"
   }
 }

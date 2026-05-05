@@ -39,9 +39,19 @@ Configurez la publication dans **les réglages du dépôt** (`github.com/mbessan
 - L’artefact GitHub Pages doit être le dossier **`dist`** complet (c’est là qu’Astro écrit `index.html` ; `base` ne duplique pas les fichiers dans `dist/sm_wiki/`).
 - Après un push, onglet **Actions** : le workflow doit être vert, puis recharger l’URL du site.
 
-## Fichier HTML de référence
+## Processus Scrum PU Platform
 
-`process-scrum-generique-standalone.html` est une maquette autonome (très volumineuse à cause d’images en base64). Elle sert de référence UX ; le contenu pérenne doit vivre en Markdown dans `src/content/docs/` avec des images en fichiers.
+Le contenu de `process-scrum-generique-standalone.html` est **intégré en Markdown** sous `src/content/docs/processus-scrum/` (recherche Pagefind, sidebar, thème Starlight). Les captures sont dans `public/processus-scrum/`.
+
+Pour **régénérer** les fichiers `.md` à partir du HTML mis à jour :
+
+```bash
+npm run extract:processus
+```
+
+Le script utilise `cheerio` et `turndown` (dépendances de dev). Relisez et ajustez le Markdown à la main si besoin.
+
+Le fichier HTML d’origine peut rester comme archive ou être retiré une fois le rendu validé.
 
 ## Structure utile
 
