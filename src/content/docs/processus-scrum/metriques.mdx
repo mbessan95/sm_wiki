@@ -1,7 +1,11 @@
 ---
-title: "Indicateurs & métriques"
-description: "Suivi et indicateurs."
+title: Indicateurs & métriques
+description: Suivi et indicateurs.
 ---
+
+export const prefix = import.meta.env.BASE_URL.endsWith('/')
+	? import.meta.env.BASE_URL
+	: `${import.meta.env.BASE_URL}/`;
 
 07 — Métriques
 
@@ -17,7 +21,7 @@ Préparation et priorisation des Epics avant l'entrée en quarter
 
 Engagement & Renouncement
 
-![Vue pré-quarter - Engagement & Renouncement](/processus-scrum/capture-01.png)
+<img src={prefix + 'processus-scrum/capture-01.png'} alt="Vue pré-quarter - Engagement & Renouncement" loading="lazy" />
 
 En amont de chaque quarter, une fois le backlog raffiné et les Epics estimés en T-shirt sizing, cette vue offre une photographie claire de ce que l'équipe peut réellement absorber.
 
@@ -36,7 +40,7 @@ Suivi en continu de l'avancement des engagements sur le quarter
 
 Suivi des Epics du quarter
 
-![Roadmap Progression](/processus-scrum/capture-02.png)
+<img src={prefix + 'processus-scrum/capture-02.png'} alt="Roadmap Progression" loading="lazy" />
 
 Cet encart offre une lecture en temps réel de l'avancement de chaque Epic engagée sur le quarter. Pour chaque ligne, plusieurs indicateurs sont disponibles :
 
@@ -49,7 +53,7 @@ Cet encart offre une lecture en temps réel de l'avancement de chaque Epic engag
 
 Travaux hors engagement (BAU / FIX / Extras)
 
-![BAU FIX Extras](/processus-scrum/capture-03.png)
+<img src={prefix + 'processus-scrum/capture-03.png'} alt="BAU FIX Extras" loading="lazy" />
 
 Les équipes ne travaillent jamais uniquement sur ce qui a été planifié. Cet encart regroupe l'ensemble des story points réalisés sur des sujets non engagés en début de quarter, et offre une lecture transparente de tout ce qui s'est intercalé dans le quotidien de l'équipe.
 
@@ -61,7 +65,7 @@ Peuvent également apparaître des nouvelles features repriorisées en urgence e
 
 Synthèse du quarter
 
-![Synthèse quarter](/processus-scrum/capture-04.png)
+<img src={prefix + 'processus-scrum/capture-04.png'} alt="Synthèse quarter" loading="lazy" />
 
 Cet encart offre une lecture globale et synthétique de l'activité du quarter. Il agrège l'ensemble des chiffres issus des deux vues précédentes en un seul coup d'œil.
 
@@ -74,7 +78,7 @@ Cet encart offre une lecture globale et synthétique de l'activité du quarter. 
 
 Sprint actif
 
-![Active Sprint](/processus-scrum/capture-05.png)
+<img src={prefix + 'processus-scrum/capture-05.png'} alt="Active Sprint" loading="lazy" />
 
 Cette vue fait le lien entre le sprint en cours et les Epics du quarter. Elle répond à une question simple : **le travail réalisé dans ce sprint fait avancer quelles Epics ?**
 
@@ -84,7 +88,7 @@ La ligne Total en bas agrège l'ensemble des story points du sprint, offrant une
 
 Vélocité de l'équipe
 
-![Sprint Velocity](/processus-scrum/capture-06.png)
+<img src={prefix + 'processus-scrum/capture-06.png'} alt="Sprint Velocity" loading="lazy" />
 
 Ce graphique retrace le nombre de story points livrés par l'équipe sur les 6 derniers sprints. D'un coup d'œil, il permet de voir si l'équipe est régulière dans sa capacité de livraison et d'identifier les sprints où elle a été plus ou moins productive.
 
@@ -92,7 +96,7 @@ C'est aussi la référence utilisée pour calibrer les engagements des prochains
 
 Progression du quarter (Burn-up chart)
 
-![Burn-up chart](/processus-scrum/capture-07.png)
+<img src={prefix + 'processus-scrum/capture-07.png'} alt="Burn-up chart" loading="lazy" />
 
 Ce graphique est une autre façon de lire l'avancement du quarter, dans le temps. Il montre comment la livraison s'est construite semaine après semaine depuis le début du quarter.
 
@@ -111,7 +115,7 @@ Lecture détaillée de l'activité sprint par sprint
 
 Indicateurs du sprint en cours
 
-![Sprint Completion](/processus-scrum/capture-08.png)
+<img src={prefix + 'processus-scrum/capture-08.png'} alt="Sprint Completion" loading="lazy" />
 
 Cet encart est actualisé en permanence et donne une lecture claire et rapide de ce qui se passe pendant le sprint.
 

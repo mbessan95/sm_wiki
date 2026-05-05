@@ -7,11 +7,12 @@ hero:
   image:
     file: ../../assets/houston.webp
   actions:
+    # Pas de « / » initial : avec GitHub Pages + base `/sm_wiki/`, les chemins absolus cassent (domaine racine).
     - text: Processus Scrum PU
-      link: /processus-scrum/
+      link: processus-scrum/
       icon: right-arrow
     - text: Exemple de guide
-      link: /guides/example/
+      link: guides/example/
       icon: right-arrow
     - text: Starlight (référence)
       link: https://starlight.astro.build
@@ -25,7 +26,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid stagger>
 	<Card title="Organisation & Processus — PU Platform" icon="open-book">
-		Guide interne Scrum, rôles, rituels, Jira et métriques — [ouvrir la section →](/processus-scrum/)
+		Guide interne Scrum, rôles, rituels, Jira et métriques — [ouvrir la section →](processus-scrum/)
 	</Card>
 </CardGrid>
 
