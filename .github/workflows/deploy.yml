@@ -25,11 +25,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      # Avec base: '/sm_wiki', Astro sort les pages dans dist/sm_wiki/ — il faut publier ce dossier,
-      # pas dist/, sinon GitHub Pages n’a pas d’index.html à la racine du site projet.
+      # Astro écrit les fichiers statiques à la racine de dist/ (index.html, _astro/, etc.).
+      # Le base: '/sm_wiki' ne crée pas de sous-dossier sm_wiki dans dist — il préfixe seulement les URL.
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/sm_wiki
+          path: dist
 
   deploy:
     environment:

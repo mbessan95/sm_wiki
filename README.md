@@ -35,8 +35,8 @@ Configurez la publication dans **les réglages du dépôt** (`github.com/mbessan
 
 ### 404 sur `mbessan95.github.io/sm_wiki/`
 
-- Vérifiez que **`.github/workflows/deploy.yml` est bien poussé** sur `main` (l’onglet *Actions* ne doit pas rester sur « Get started » sans workflow).
-- L’artefact publié doit correspondre au dossier de build avec `base` : **`dist/sm_wiki`**, pas `dist/` seul (sinon pas d’`index.html` à la racine du site GitHub Pages).
+- Vérifiez que **`.github/workflows/deploy.yml` est bien poussé** sur `main`.
+- L’artefact GitHub Pages doit être le dossier **`dist`** complet (c’est là qu’Astro écrit `index.html` ; `base` ne duplique pas les fichiers dans `dist/sm_wiki/`).
 - Après un push, onglet **Actions** : le workflow doit être vert, puis recharger l’URL du site.
 
 ## Fichier HTML de référence
