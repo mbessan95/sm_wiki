@@ -1,21 +1,16 @@
-# build output
+# Build et artefacts courants (prochains projets Node / statiques)
 dist/
-# generated types
 .astro/
 
-# dependencies
 node_modules/
 
-# logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
-# environment variables
 .env
 .env.production
 
-# macOS-specific files
 .DS_Store
